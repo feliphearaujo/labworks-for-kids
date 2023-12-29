@@ -1,0 +1,129 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header main";
+
+}
+
+header{
+    grid-area: header;
+    background-color: white;
+}
+
+header a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #464f5a;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    text-decoration: none;
+    justify-content: center;
+    margin: 20px;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.formulario{
+    border: none;
+    background-color: #03bde9;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin: 20px;
+    border-radius: 20px;  
+}
+
+.dados{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background-color: #03bde9;
+    color: #464f5a;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.dados p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: white;
+}
+
+.cursos{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background-color: #03bde9;
+    color: #464f5a;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.oculto{
+   display: none;
+}
+
+.visivel{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background-color: white;
+    color: #464f5a;
+    font-family: 'Courier New', Courier, monospace
+}

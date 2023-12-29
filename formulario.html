@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabWorks_para crianças</title>
+    <link rel="Stylesheet" href="css/estilo_formulario.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">VOLTAR<img src="img/logo.png" width="100"></a>
+    </header>
+    <main>
+        <form method="POST" class="formulario">
+            <Fieldset class="dados">
+                <p>Informe seus dados</p>
+                <label class="rotulo">Digite seu nome: <input type="text" id="txtNome" class="txtNome"></label><br>
+                <label class="telefone">Telefone: <input type="text" id="txtTel"></label><br>
+                <label class="email">Email: <input type="email" id="txtEmail"></label><br>
+                <input type="checkbox" id="concordar">Concordo em utilizar os dados para fins de marketing<br>   
+            </Fieldset>
+            <fieldset class="cursos">
+                <p>Selecione o curso desejado:</p>
+                <select name="modalidade" id="txtMod" disabled="True" required>
+                    <option>Introdução à robótica com arduino e lego</option>
+                    <option>HTML + CSS</option>
+                    <option>Implementação de sistemas com JavaScript</option> 
+                    <option>Introdução a banco de dados relacionais</option>   
+                </select><br>
+                <p>Informe a data desejada para participar da aula:</p>
+                <input type="date" id="dtDate" disabled="True" required><br>
+                <p>Informe o melhor seu melhor horário disponivel para a aula:</p>
+                <input type="time" id="tmTime" disabled="True" required>
+            </fieldset>
+
+            <input type="submit" value="Agendar" class="oculto" id="agendar">
+    </form>
+    
+    </main> 
+</body>
+</html>
